@@ -1,0 +1,31 @@
+{
+	"name": "watermarktable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "incrementalload",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Incremental_load"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "TableName",
+				"type": "varchar"
+			},
+			{
+				"name": "WatermarkValue",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "watermarktable"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

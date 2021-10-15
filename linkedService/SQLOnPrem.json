@@ -1,0 +1,17 @@
+{
+	"name": "SQLOnPrem",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=DESKTOP-96JAVDO\\SQL;initial catalog=azure2",
+			"userName": "desktop-96javdo\\siroj",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmNzBjZTY5MC02NjM4LTQ2N2MtYjQ2NC01YWI3NDI1Yjg2MDciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "selfhostedIRLocal",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
